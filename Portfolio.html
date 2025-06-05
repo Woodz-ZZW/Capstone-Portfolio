@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woody Zhao - Capstone Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-200 hover:text-gray-900 transition-colors;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-blue-500;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .tag {
+            @apply inline-block bg-blue-100 text-blue-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-blue-600">Woody Zhao's Portfolio</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#welcome" class="nav-link">Welcome</a>
+                        <a href="#about-project" class="nav-link">About Project</a>
+                        <a href="#journey" class="nav-link">Journey</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#product" class="nav-link">The Product</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#welcome" class="block nav-link text-base">Welcome</a>
+                <a href="#about-project" class="block nav-link text-base">About Project</a>
+                <a href="#journey" class="block nav-link text-base">Journey</a>
+                <a href="#skills" class="block nav-link text-base">Skills</a>
+                <a href="#product" class="block nav-link text-base">The Product</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <section id="welcome" class="py-12">
+            <div class="card text-center">
+                <h1 class="text-4xl font-bold text-blue-600 mb-4">Welcome to My Capstone Portfolio!</h1>
+                <p class="text-lg mb-2">Hi! I'm Woody Zhao, and this is my Capstone Project: the <strong>Tennis Score Tracker</strong>.</p>
+                <p class="text-md text-gray-600">The Capstone Project is a special opportunity to showcase learning from K-12, focusing on a topic of passion and connecting it to our journey and future aspirations. Explore this site to learn about my project's story, from idea to creation.</p>
+            </div>
+        </section>
+
+        <section id="about-project" class="py-12">
+            <h2 class="section-title">About My Project</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Why This Topic?</h3>
+                    <p>I chose to create a Tennis Score Tracker because of my interest in web programming. I wanted to build a practical tool for a sport, and the specific rules of tennis scoring presented an interesting programming challenge. This project allowed me to learn and apply new web development skills.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">My Goals</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Learn to build a functional website from scratch.</li>
+                        <li>Develop a tennis score tracker that accurately implements tennis rules.</li>
+                        <li>Master JavaScript for interactive features and live score updates.</li>
+                        <li>Incorporate data collection for match statistics like double faults.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-8">
+                <h3 class="text-2xl font-semibold text-gray-700 mb-3">The Product: Tennis Score Tracker Website</h3>
+                <p class="mb-2">My Capstone product is a web-based application designed to keep score during a tennis match. It's built with HTML, CSS, and JavaScript.</p>
+                <p class="text-gray-600">Key features include player name input, selection of match formats (Best of 3, Best of 5, Super Tiebreak), live tracking of points, games, and sets, automatic handling of tiebreaks, double fault logging, and a comprehensive match results summary page. I chose this format to practically apply and showcase my new web development skills.</p>
+            </div>
+        </section>
+
+        <section id="journey" class="py-12">
+            <h2 class="section-title">My Learning Journey</h2>
+            <div class="space-y-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Phase 1: Getting Started (HTML & CSS - Fall 2024)</h3>
+                    <p class="text-gray-600">My journey began with the basics: HTML for structure and CSS for styling. It was thrilling to create my first simple webpage. Challenges included mastering advanced CSS for responsive design and the patience-testing process of debugging small code errors. YouTube tutorials and online coding platforms were my primary learning resources.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Phase 2: Diving into JavaScript (Winter 2025)</h3>
+                    <p class="text-gray-600">Next, I tackled JavaScript to add interactivity for real-time score updates. This was a significant step up in complexity. I started implementing data collection for statistics like double faults. My mentor introduced me to GitHub for version control, which was invaluable. I also began keeping a coding journal with screenshots and video demos to track my progress and reflect on my learning.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Phase 3: Enhancements & Complexity (Spring 2025)</h3>
+                    <p class="text-gray-600">I focused on improving data collection, like accurate double fault tracking, and developed the match results page. As features grew, so did the project's complexity. Managing the JavaScript state (points, games, sets, server, tiebreaks, stats) and debugging became more challenging. I increasingly relied on official programming documentation and learned to break down large tasks into smaller, manageable steps.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Challenges & Rewarding Moments</h3>
+                    <p class="text-gray-600 mb-2"><strong>Challenges:</strong> Debugging JavaScript, understanding complex tennis rules for coding, and managing the growing complexity of the application.</p>
+                    <p class="text-gray-600"><strong>Rewards:</strong> Seeing the score tracker function correctly for the first time, successfully adding planned features like the results page, and recognizing my skill improvement by comparing my early code to later versions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mentorship" class="py-12">
+            <h2 class="section-title">Mentorship: Guidance on My Journey</h2>
+            <div class="card">
+                <p class="mb-2">I was fortunate to have a mentor who provided invaluable guidance. We had regular contact, which is a key component of the Capstone project.</p>
+                <p class="text-gray-600 mb-2">My mentor helped by:</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-600 mb-2">
+                    <li>Reviewing my code and suggesting more efficient methods.</li>
+                    <li>Introducing tools like GitHub for version control.</li>
+                    <li>Discussing strategies for planning new features (e.g., statistics tracking, results page design).</li>
+                    <li>Assisting with troubleshooting complex JavaScript bugs.</li>
+                    <li>Providing feedback on UI/UX design ideas to improve clarity.</li>
+                </ul>
+                <p class="text-gray-600">This mentorship taught me the importance of pre-coding planning and clear communication about technical challenges.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-12">
+            <h2 class="section-title">Skills I Developed</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Technical Skills</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>HTML: Structuring web content.</li>
+                        <li>CSS: Styling web pages for visual appeal and usability.</li>
+                        <li>JavaScript: Implementing interactivity, game logic, and DOM manipulation.</li>
+                        <li>Debugging: Efficiently finding and fixing code errors.</li>
+                        <li>GitHub: Version control and project management.</li>
+                        <li>Basic UI/UX Design: Considering user-friendliness in web design.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Life Skills</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Problem-Solving: Overcoming coding and logical challenges.</li>
+                        <li>Critical Thinking: Analyzing problems and developing solutions for game rules.</li>
+                        <li>Project Management: Breaking down tasks and planning work.</li>
+                        <li>Communication: Articulating technical issues and ideas with my mentor.</li>
+                        <li>Time Management: Scheduling work effectively to meet project milestones.</li>
+                        <li>Reflection: Analyzing my learning process for continuous improvement.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="core-competencies" class="py-12">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="space-y-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Communication</h3>
+                    <p class="text-gray-600">Practiced through discussions with my mentor, asking questions, and incorporating feedback. Learned to articulate coding ideas and challenges clearly.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Thinking (Critical and Creative)</h3>
+                    <p class="text-gray-600">Applied critical thinking extensively during debugging and problem-solving. Used creative thinking in designing the score tracker's UI and the presentation of the results page.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Personal and Social Development</h3>
+                    <p class="text-gray-600">This project fostered self-awareness about my learning style and motivation. Gained confidence in tackling complex tasks and acquiring new skills. Working with a mentor enhanced my ability to accept and apply constructive feedback.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="future-connections" class="py-12">
+            <h2 class="section-title">Connections to My Future</h2>
+            <div class="card">
+                <p class="text-gray-600">This Capstone project has been a significant step in exploring my interest in web development and technology. The skills in coding, project management, and problem-solving are directly applicable to future studies and potential careers in the tech industry. It provided a realistic experience of transforming an idea into a functional product and solidified my enjoyment of building useful tools.</p>
+            </div>
+        </section>
+
+        <section id="product" class="py-12">
+            <h2 class="section-title">The Product in Action: Tennis Score Tracker</h2>
+            <div class="card">
+                <div class="items-center"> <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-3">Key Features</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600 mb-4">
+                            <li><strong>Easy Setup:</strong> Input player names.</li>
+                            <li><strong>Match Format Selection:</strong> Best of 3, Best of 5, or Super Tiebreak.</li>
+                            <li><strong>Coin Toss Start:</strong> Winner chooses to serve or receive.</li>
+                            <li><strong>Live Score Buttons:</strong> Simple point allocation.</li>
+                            <li><strong>Automatic Scoreboard:</strong> Displays points, games, sets.</li>
+                            <li><strong>Correct Tennis Rules:</strong> Handles "Advantage" and game wins.</li>
+                            <li><strong>Tiebreak Logic:</strong> Automatic scoring for 6-6 games.</li>
+                            <li><strong>Server Indicator:</strong> Clearly shows current server.</li>
+                            <li><strong>Double Fault Tracking:</strong> Log double faults per player.</li>
+                            <li><strong>Match Results Summary:</strong> Detailed post-match overview.</li>
+                            <li><strong>Reset/New Match:</strong> Easy controls to restart or begin anew.</li>
+                        </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="evidence" class="py-12">
+            <h2 class="section-title">My Portfolio Evidence</h2>
+            <div class="card">
+                <p class="text-gray-600 mb-2">My Capstone journey and work are documented through:</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-600">
+                    <li><strong>Reflection Journals:</strong> Three detailed journals (Dec, Feb, May) covering progress, challenges, learning, and mentorship.</li>
+                    <li><strong>Coding Journal & Media:</strong> Screenshots and video demos documenting development stages, features, and bug fixes.</li>
+                    <li><strong>Mentor Interaction Records:</strong> Notes within reflection journals detailing discussions and guidance from my mentor.</li>
+                    <li><strong>The Product Itself:</strong> The HTML, CSS, and JavaScript code of the Tennis Score Tracker serves as the primary technical evidence.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Woody Zhao. Capstone Project Portfolio.</p>
+        <p class="text-sm text-gray-400">Johnston Heights Secondary School</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = mobileMenuButton.querySelector('svg:first-child');
+        const closeIcon = mobileMenuButton.querySelector('svg:last-child');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu after click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    hamburgerIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                }
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
